@@ -1,0 +1,47 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+body{
+    text-align: center;
+	background-color: lightgray;
+}
+
+
+header, footer{
+	background-color: black;
+	color: lightgray;
+}
+
+footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 5px 0px;
+}
+
+footer p{
+    padding: 3px 0px;
+}
+
+h1{
+	color: black;
+	padding: 5px;
+}
+
+nav{
+	padding-bottom: 5px;
+}
+
+a {
+	color: lightgray;
+	text-decoration: none;
+	padding: 0px 20px;
+	border-style: double;
+}
+
+a:hover {
+  background-color: darkgrey;
+}
