@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PagesController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,21 +18,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/pagina', function () {
-    $numbers = [
-    "Een",
-    "Twee",
-    "Drie",
-    ];
-    return view('pagina', ['numbers' => $numbers]);
-});
+Route::get('/home', [PagesController::class, "index"])->name('home');
 
-Route::get('/contact', function () {
-    return view('contact');
-});
+Route::get('/about', [PagesController::class, "info"])->name('about');
 
-Route::get('/about', function () {
-    return view('about');
-});
-
-
+Route::get('/contact', [PagesController::class, "form"])->name('contact');
